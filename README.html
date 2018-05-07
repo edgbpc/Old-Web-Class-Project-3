@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="CS 3010 Project 1" />
+    <meta name="author" content="Eric Goodwin" />
+	
+	<title> README File for Project 1 </title>
+	
+	
+</head>
+
+<body>
+
+	<p>
+	No changes to responsive design from project 1.  <br />
+	Required Fields still handed by HTML so the PHP code that triggers "Required Field" error will never execute.  I would have preferred to let PHP handled that for this assignment
+	but had issues that my form would submit even if some of the required fields weren't filled out.  Using HTML solved this issue but did make the PHP code unncessary.<br />
+	For project 3, I intend to let javascript and PHP handle the required fields so hopefully will be removing that attribute from the HTML code for that turn in. For now, I left the code in place <br />
+	I had intended to keep as many of my PHP functions in a seperate script file but found it much easier to ensure variables were being assigned and cleared out correctly
+	with that code remaining on the main registration PHP page <br />
+	I do still use some Javascript but all validation is now handled by PHP.<br />
+	I opted not use the Filter available in PHP for email validation because I wanted the same logic to be used in javascript as in PHP so that Javascript would OK an email address just to have PHP reject it <br />
+	I used the Sessions array to pass variables into a confirmation page.
+	I do still use some of the javascript from the first project.  Auto format for phone and zipcode are still handed by the javascript.  The turn in file for javascript has all the validation code commented out.
+	Changed the drop down for states so there is always a state selected instead of "Select State" being the default selected option.
+	
+	
+	<hr />
+
+	<p>
+	Responsive design handled by bootstrap.  Tested using Firefox Developer's responsive design mode.  Please see screenshots. <br />
+	I used the Firefox developer toolkit because I didn't have anyway to test if responsive resizing was truely correct for various devices. <br />
+	It looks correct when i select various types of devices.  I've screenshoted Iphone 5s, Ipad air 2, and laptop down below. <br />
+	
+	Iphone view:<br />
+	<img src="image test/iphone home.png"/>
+	<img src="image test/iphone registration 1.png"/>
+	<img src="image test/iphone registration 2.png"/>
+	
+	<hr />
+	
+	Ipad view:<br />
+	<img src="image test/ipad air home page.png" width="50%" />
+	<img src="image test/ipad air registration 1.png" width="50%" />
+	<img src="image test/ipad air registration 2.png" width="50%" />
+	
+	<hr />
+	
+	Laptop/desktop view: <br />
+	<img src="image test/laptop home.png" width="50%" />
+	<img src="image test/laptop registration.png" width="50%" />
+	
+	<hr />
+	
+	MAX Length enforced via HTML 5 attribute maxlength.<br />
+	Min lengths enforced via javascript. <br />
+	Phone number format enforced by javascript developed in class.  Zip code format enforcement derived from that code.<br />
+	Password complexity and matching enforced by javascript using regular expressions. <br />
+	I preferred use of placeholders instead of labels for most fields. I do use labels for the radio buttons and use "label for" for these fields. <br />
+	<br />
+	I found the most difficult part was getting the responsive columns to function properly.  The javascript was pretty straight forward.  <br />
+	Any feedback on how I excuted the responsive columns on the form is greatly appreciated.
+	</p>
+	
+</body>
